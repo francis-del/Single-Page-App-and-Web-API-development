@@ -4,7 +4,7 @@
 body {
 
 	color: #7f7f7f;
-  background: #f9f6f3;
+  background-color: #EBF2FA;
   position: relative;
   /* background-image: url("https://www.chrishazemusic.com/wp-content/uploads/2018/02/Website-Background-scaled.jpg"); */
     font-family: Helvetica sans-serif;
@@ -41,7 +41,7 @@ header {
 h1, h2, h3 {
   margin: 0;
   padding: 0;
-  color: #CCC;
+  color: #f5ebe0;
 }
 
 h1 {
@@ -89,15 +89,15 @@ main {
   margin-top: 2em;
   padding: 2em;
   box-sizing:border-box;
-  background-image: ;
-  color: #f10080;
+  /* background-image: ; */
+  background-color: #F5EBE0;
   
 }
 
 article {
   width: 50vw;
-  /* background-color: grey; 
- float:left; */
+  background-color: #EDDCD2; 
+  float:left;
 }
 
 aside {
@@ -146,7 +146,7 @@ small {
 fieldset {
   position: relative;
   width: 15vw;
-  border: 1px solid #CCC;
+  border: 1px solid #EDDCD2;
   padding-top: 2vw;
 }
 
@@ -165,7 +165,7 @@ input[type="file"] {
 }
 
 input[type="submit"], header > a, a .custom-file-upload {
-  background-color: #15c42f;
+  background-color: #CBF3F0;
   border: 2px solid black;
   color: black;
   padding: 0.4vw 0.8vw;
@@ -178,11 +178,11 @@ input[type="submit"], header > a, a .custom-file-upload {
 
 input[type="upload"]:hover, header > a:hover, .custom-file-upload:hover {
   color: red;
-  background-color: yellow;
+  background-color: #EBF2FA;
 }
 
 a {
-  background-color: #15c42f;
+  background-color: #CBF3F0;
   border: 2px solid black;
   color: black;
   padding: 0.4vw 0.8vw;
@@ -213,7 +213,7 @@ textarea {
 }
 
 label {
-	color: aqua;
+	color: #99582A;
 }
 
 select {
@@ -223,7 +223,7 @@ select {
 }
 
 form > br {
-  line-height: 3vw;
+  line-height: 6vw;
 }
 
 dl {
