@@ -4,10 +4,10 @@
 
 
 body {
-  background-image: url(https://image.shutterstock.com/image-photo/money-tracker-app-budget-expense-260nw-1977696401.jpg);
+  //background-image: url(https://image.shutterstock.com/image-photo/money-tracker-app-budget-expense-260nw-1977696401.jpg);
 
 	color: #7f7f7f;
-  //background-color: #EBF2FA;
+  background-color: #EBF2FA;
   position: relative;
   /* background-image: url("https://www.chrishazemusic.com/wp-content/uploads/2018/02/Website-Background-scaled.jpg"); */
     font-family: Helvetica sans-serif;
