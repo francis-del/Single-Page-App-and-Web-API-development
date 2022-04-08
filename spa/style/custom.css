@@ -1,10 +1,13 @@
 
 /* this is where you will define your stylesheet for non-touchscreen devices */
 
+
+
 body {
+  background-image: url(https://image.shutterstock.com/image-photo/money-tracker-app-budget-expense-260nw-1977696401.jpg);
 
 	color: #7f7f7f;
-  background-color: #EBF2FA;
+  //background-color: #EBF2FA;
   position: relative;
   /* background-image: url("https://www.chrishazemusic.com/wp-content/uploads/2018/02/Website-Background-scaled.jpg"); */
     font-family: Helvetica sans-serif;
@@ -18,7 +21,7 @@ aside {
   max-width: 400px;
   margin: auto;
 }
-.msg {
+/* .msg {
   position: fixed;
   top: 2em;
   border: 1px solid red;
@@ -27,7 +30,7 @@ aside {
   color: red;
   padding: 1em;
   margin: 2em;
-}
+} */
 
 header {
 	background-color: #7f7f7f;
@@ -38,10 +41,10 @@ header {
   height: 8vw;
 }
 
-h1, h2, h3 {
+h1, h2 {
   margin: 0;
   padding: 0;
-  color: #f5ebe0;
+  color: #EBF2FA;
 }
 
 h1 {
@@ -57,11 +60,11 @@ h2 {
   margin-left: 0.6vw;
 }
 
-h3 {
+/* h3 {
   font-size: 2vw;
   margin: 1vw;
   margin-left: 0.6vw;
-}
+} */
 
 header > a {
   margin-top: 3vw;
@@ -83,20 +86,20 @@ p, legend {
   font-size: 1.5vw;
 }
 
-main {
-  width: 100%;
+/* main {
+  max-width: 100%;
   margin: auto;
   margin-top: 2em;
   padding: 2em;
   box-sizing:border-box;
   /* background-image: ; */
-  background-color: #F5EBE0;
+  /* background-color: #EBF2FA; */
   
-}
+} */
 
 article {
   width: 50vw;
-  background-color: #EDDCD2; 
+  background-color: #EBF2FA; 
   float:left;
 }
 
@@ -106,7 +109,7 @@ aside {
   width: 50vw;
 }
 
-main a {
+/* main a {
   color: black;
   text-decoration: ;
 }
@@ -114,7 +117,7 @@ main a {
 main a:hover {
   color: red;
   text-decoration: none;
-}
+} */
 
 section {
   background-color: #DDD;
@@ -130,11 +133,11 @@ section > p {
   margin-bottom: 0.5vw;
 }
 
-section > h3 {
+/* section > h3 {
   margin: 0;
   padding: 0;
   font-size: 1.8vw;
-}
+} */
 
 small {
   display: block;
@@ -195,10 +198,12 @@ a {
 
 a:hover{
   color: grey;
-  background-color: #c8f418;
+  background-color: #EBF2FA;
 }
 
-input[type="text"], input[type="username"], input[type="password"], input[type="Expense"], input[type="period"], input[type="amount"], input[type="description"], input[type="Choose a file"], textarea, select {
+
+
+input[type="text"], input[type="username"], input[type="password"], input[type="Name"], input[type="period"], input[type="shortline"], input[type="period"], input[type="amount"], input[type="picture"], textarea, select {
   font-size: 1.5vw;
   width: 25vw;
   border: 1px solid #CCC;
@@ -207,13 +212,17 @@ input[type="text"], input[type="username"], input[type="password"], input[type="
   /* border-radius: 0.6vw; */
 }
 
+
+
+
+
 textarea {
   height: 10vw;
   resize: none;
 }
 
 label {
-	color: #99582A;
+	color: #EBF2FA;
 }
 
 select {
@@ -260,6 +269,24 @@ table {
   border-collapse: collapse;
 }
 
+table label {
+  text-align: center;
+  text-decoration-color: black;
+  font-size: 4.5vw;
+  inline-size: auto;
+  background-color: #CCC;
+  width: 25vw;
+  //border: 1px solid#ffff;
+  padding: 0.5vw;
+  /* margin-bottom: 1vw; */
+  /* border-radius: 0.6vw; */
+}
+
+table img {
+ width: 300px;
+}
+
+
 tr:nth-child(odd) {
   background-color: #DDD;
 }
@@ -280,3 +307,47 @@ td:last-child, th:last-child {
   width: 10vw
   text-align: right;
 }
+
+/* ====== ADD BUTTON ====== */
+
+
+/* /* button#add {
+	display: block;
+	position: fixed;
+	bottom: 1em;
+	right: 1em;
+	z-index: 5;
+	background-color: grey;
+	color: white;
+	font-size: 5em;
+	width: 1.2em;
+	block-size: border-box;
+	border-radius: 2em;
+	border: none;
+	cursor: pointer;
+} */
+
+/* .add {
+	display: block;
+	position: fixed;
+	bottom: 1em;
+	right: 1em;
+	z-index: 5;
+	padding: 1em;
+}
+
+button#add:hover {
+	background-color: white;
+	color: grey;
+}
+
+input[type="file"] {
+	display: none;
+}
+
+form img {
+	position: relative;
+	top: 1.5em;
+	left: 1em;
+	height: 50px;
+} */ */

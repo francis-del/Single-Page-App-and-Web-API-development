@@ -36,7 +36,9 @@
 			<p>&nbsp;</p>
 		</footer> -->
 	<template id="home">
+		<!-- <h2>Add and Manage your Expense with this Expense tracker.</h2> -->
 	</template>
+
 	<template id="login">
 		<form name="login">
 			<p><label for="email">Username</label><br /><input type="text" name="user" placeholder="username" /></p>
@@ -65,20 +67,24 @@
 
 
 
+
+
+
+
 <template id="addExpense">
 	<p>Welcome to the Expenses Page</p>
 		<form id = "addExpense">
-			<p><label for="Expense">Expense</label><br /><input type="text" name="Expense" placeholder="Expense""/></p>
+			<p><label for="Expense">Expense</label><br /><input type="text" name="Expense" placeholder="Enter Your Expense""/></p>
 
 			<!-- <p><label for="period">period</label><br /><input type="datetime" name="period" placeholder="period" /></p> -->
 
 			<p><label for="period">period</label><br /></p>
-			<input type="datetime" id="period" name="period" placeholder="Write date here">
+			<input type="datetime" id="period" name="period" placeholder="Enter date here">
 
 			<p><label for="amount">amount (in £): </label><br />
-			<input type="text" name="amount" style="font-size: 15px; height: 40px; width:280px; "/></p>
+			<input type="text" name="amount" placeholder="Enter Amount" style="font-size: 15px; height: 40px; width:280px; "/></p>
 
-			<p><label for="description">description</label><br /><input type="text" name="description" placeholder="Describe Expense"/></p>
+			<p><label for="description">description</label><br /><input type="text" name="description" placeholder="Describe Your Expense"/></p>
 
 			<p><label for="category">category</label><br/></p>
 			<select name = "category">
@@ -121,6 +127,11 @@
 	</table>
 	
 		
+	</template>
+
+	<template id="user">
+		<h2>hello</h2>
+		<p id="userPay"></p>
 	</template>
 
 

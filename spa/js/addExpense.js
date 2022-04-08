@@ -10,7 +10,7 @@ export async function setup(node) {
 		const token = localStorage.getItem('authorization')
 		console.log(node)
 		document.querySelector('header p').innerText = 'Add a new Expense'
-		customiseNavbar(['home', 'logout','getExpenses'])
+		customiseNavbar(['home','getExpenses'])
 		const paragraph = node.querySelector('p')
 		//paragraph.innerText = "text changed"
 		const button = node.getElementById('addExpense')

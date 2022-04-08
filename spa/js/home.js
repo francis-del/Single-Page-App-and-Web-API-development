@@ -8,7 +8,7 @@ export async function setup(node) {
 	try {
 		console.log(node)
 		document.querySelector('header p').innerText = 'Home'
-		customiseNavbar(['home', 'foo', 'logout']) // navbar if logged in
+		customiseNavbar(['home', 'addExpense', 'getExpenses', 'logout']) // navbar if logged in
 		const token = localStorage.getItem('authorization')
 		console.log(token)
 		if(token === null) customiseNavbar(['home', 'register', 'login']) //navbar if logged out
@@ -19,15 +19,24 @@ export async function setup(node) {
 	}
 }
 
-// this example loads the data from a JSON file stored in the uploads directory
+
+
+
+
+//this example loads the data from a JSON file stored in the uploads directory
 async function addContent(node) {
-	const response = await fetch('/uploads/quotes.json')
+	//const response = await fetch('/uploads/quotes.json')
+
+	const response = await fetch(url, options)
 	const quotes = await response.json()
-	const template = document.querySelector('template#quote')
-	for(const quote of quotes.data) {
+	const template = document.querySelector('template#user')
+	for(const user of data) {
 		const fragment = template.content.cloneNode(true)
-		fragment.querySelector('h2').innerText = quote.author
-		fragment.querySelector('p').innerText = quote.quote
+
+		let userPay = fragment.getElementById("userPay")
+		userPay.innerText = user.userPay
+		// fragment.getElementById('h2').innerText = user.userPay
+		//fragment.querySelector('p').innerText = quote.quotes
 		node.appendChild(fragment)
 	}
 }

@@ -8,7 +8,7 @@ export async function setup(node) {
 	try {
 		console.log(node)
 		document.querySelector('header p').innerText = 'Home'
-		customiseNavbar(['home', 'foo', 'logout', 'addExpense']) // navbar if logged in
+		customiseNavbar(['home', 'foo', 'addExpense']) // navbar if logged in
 		const token = localStorage.getItem('authorization')
 		console.log(token)
 		if(token === null) customiseNavbar(['home', 'register', 'login']) //navbar if logged out
@@ -34,7 +34,7 @@ async function addContent(node) {
 	const response = await fetch(url, options)
 	const data = await response.json()
 	const template = document.querySelector('template#getExpenses')
- console.log("HEREEEEEEEEEEE:")
+ //console.log("HEREEEEEEEEEEE:")
  console.log(data)
 
 
