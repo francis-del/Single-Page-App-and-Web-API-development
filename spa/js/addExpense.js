@@ -1,6 +1,6 @@
 
 
-/* AddExpense.js */
+/* addExpense.js */
 
 import { customiseNavbar, file2DataURI, loadPage, secureGet, showMessage } from '../util.js'
 

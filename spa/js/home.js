@@ -29,14 +29,11 @@ async function addContent(node) {
 
 	const response = await fetch(url, options)
 	const quotes = await response.json()
-	const template = document.querySelector('template#user')
+	const template = document.querySelector('template#quote')
 	for(const user of data) {
 		const fragment = template.content.cloneNode(true)
-
-		let userPay = fragment.getElementById("userPay")
-		userPay.innerText = user.userPay
-		// fragment.getElementById('h2').innerText = user.userPay
-		//fragment.querySelector('p').innerText = quote.quotes
+		// fragment.getElementById('h2').innerText = 
+		fragment.querySelector('p').innerText = quote.quotes
 		node.appendChild(fragment)
 	}
 }

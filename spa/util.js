@@ -38,11 +38,27 @@ export async function triggerPageChange() {
 }
 
 function getPageName() {
-	console.log(window.location.pathname)
-	const path = window.location.pathname.replace('/', '')
-	let page = path ? path : 'home'
-	console.log(`page: ${page}`)
-	return page
+	let path = window.location.pathname
+	if(path.includes("/expenseDetail_")){
+					const arr = path.split("_")
+					console.log("FIIIIIIIGHHHH CLUBBBBBBBBBBBBBBBBBB")
+					console.log(window.location.pathname)
+				 arr[0] = arr[0].substring(1)
+					let page = arr[0] ? arr[0] : 'home'
+					console.log(`page: ${page}`)
+					return page
+
+	}else{
+		const path = window.location.pathname.replace('/', '')
+		let page = path ? path : 'home'
+		console.log(`page: ${page}`)
+		return page
+	}
+
+
+
+
+	
 }
 
 export function highlightNav(page) {
