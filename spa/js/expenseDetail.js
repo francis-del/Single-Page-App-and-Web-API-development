@@ -49,6 +49,9 @@ async function addContent(node) {
    let shortline= node.getElementById("shortline")
    shortline.innerText = expense.description
 
+   let category= node.getElementById("category")
+   category.innerText = expense.category
+
    let date_created= node.getElementById("date_created")
     const time = expense.date_created
     const split2 = time.split('T')
