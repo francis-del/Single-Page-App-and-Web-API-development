@@ -256,6 +256,23 @@ td {
 	padding: 1em;
 	background-color: #DDE5B6;
 }
+
+.img:hover{
+	-webkit-animation-name: zoom;
+	animation-duration: 1.0s;
+	color: #424242; 
+ -webkit-transition: all .3s ease-in;
+ -moz-transition: all .3s ease-in;
+ -ms-transition: all .5s ease-in;
+ -o-transition: all .3s ease-in;
+ transition: all .5s ease-in;
+ opacity: 1;
+ transform: scale(1.15);
+ -ms-transform: scale(1.15); /* IE 9 */
+ -webkit-transform: scale(1.15); /* Safari and Chrome */
+
+}
+
 ==================== DETECTS IF SCREEN SUPPORTS TOUCH ====================
 
 /* Detects a touch-screen device

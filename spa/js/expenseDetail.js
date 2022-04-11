@@ -55,7 +55,18 @@ async function addContent(node) {
    let date_created= node.getElementById("date_created")
     const time = expense.date_created
     const split2 = time.split('T')
-    date_created.innerText = split2[0]
+  
+
+        const text = split2[0]
+		const new_period = text.split("-")
+		console.log(new_period)
+		const day = new_period[2]
+		const month = new_period[1]
+		const year = new_period[0]
+
+		const new_date = day + '-' + month + '-' + year
+
+		date_created.innerText = new_date
 
    let img = node.querySelector('img')
    img.src = `${window.location.origin}/uploads/${expense.picture_name}`

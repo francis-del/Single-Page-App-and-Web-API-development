@@ -33,7 +33,7 @@ export async function addExpense(data,username) {
         const  month = date.getMonth()+1
         const year = date.getFullYear()
         const new_date = year + '-'+month+'-'+day
-        //const new_date = day + '-' + month+'-' + year
+        //const new_date = day + '-'+month+'-' + year
         console.log (new_date)
         const sql2 = `INSERT INTO expenses(ExpenseName, period,date_created,amount,description,category,approval,userID,picture_name) VALUES("${data.Expense}", "${data.period}","${new_date}","${data.amount}","${data.description}","${data.category}","not-approved","${getUserID[0].id}","${img_name}")`
         await db.query(sql2)

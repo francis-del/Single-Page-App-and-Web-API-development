@@ -41,6 +41,8 @@ async function addContent(node) {
 for(const expense of data){
 	const fragment = template.content.cloneNode(true)
 
+	
+
 	let expenseName = fragment.getElementById("expenseName")
  expenseName.innerText = expense.ExpenseName
 
@@ -48,7 +50,17 @@ for(const expense of data){
  shortline.innerText = expense.description
 
  let period= fragment.getElementById("period")
-  period.innerText = expense.period
+  
+	const text = expense.period
+		const new_period = text.split("-")
+		console.log(new_period)
+		const day = new_period[2]
+		const month = new_period[1]
+		const year = new_period[0]
+
+		const new_date = day + '-' + month + '-' + year
+
+		period.innerText = new_date
 
  let amount= fragment.getElementById("amount")
  amount.innerText = expense.amount
