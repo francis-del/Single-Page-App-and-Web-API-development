@@ -76,7 +76,7 @@ export async function expenseDetail(ExpenseID) {
     try{
         const sql2 = `SELECT * FROM expenses WHERE ExpenseID = "${ExpenseID}"`
         const data =  await db.query(sql2)
-        console.log("Detials of 1 EXPENSE!!!")
+        console.log("Detials of a SINGLE EXPENSE")
         console.log(data)
         return data[0]
 
